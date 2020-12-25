@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="id">ID</string>
+    <string name="p1Name">P1NAME</string>
+    <string name="p2Name">P2NAME</string>
+    <string name="p1Score">P1SCORE</string>
+    <string name="p2Score">P2SCORE</string>
+    <string name="gameNo">GAMENO</string>
+    <string name="delete">DELETE</string>
+    <string name="load">LOAD</string>
+    <string name="gametype">GAME_TYPE</string>
+    <string name="player1_key">PLAYER1_KEY</string>
+    <string name="player2_key">PLAYER2_KEY</string>
+    <string name="board_values">BOARD_VALUES</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
+</resources>

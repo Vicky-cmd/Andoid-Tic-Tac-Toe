@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/play_game"
+        android:orderInCategory="1"
+        android:title="Play Game"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/game_reset"
+        android:title="Reset Game"
+        android:icon="@drawable/reset_all"
+        android:orderInCategory="3"
+        android:visible="false"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/game_clear"
+        android:title="Clear"
+        android:orderInCategory="2"
+        android:visible="false"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/Load"
+        android:title="Load Game"
+        android:orderInCategory="3"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/play_vs_comp_game"
+        android:title="Play Vs Computer"
+        android:orderInCategory="2"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/resetdata"
+        android:title="Reset Data"
+        android:orderInCategory="4"
+        android:visible="false"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/share_app"
+        android:title="Share"
+        android:orderInCategory="5"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        android:orderInCategory="6"
+        app:showAsAction="never"/>
+</menu>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/img_res"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:src="@drawable/reset_all"
+                app:layout_constraintBottom_toBottomOf="@+id/res_text"/>
+            <TextView
+                android:id="@+id/res_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset App Data \n (Cannot be \n Undone)"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img_res"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toStartOf="@+id/res_switch"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+            <Switch
+                android:id="@+id/res_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/res_text"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    app:startDestination="@id/nav_home">
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.infotrends.in.tictactoe.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/Main_Activity_View"
+            app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/Main_Activity_to_Tic_Tac_Toe_View"
+            app:destination="@id/nav_play_game" />
+        <action
+            android:id="@+id/Main_Activity_to_Tic_Tac_Toe_Vs_Comp_View"
+            app:destination="@id/nav_play_vs_comp_game" />
+        <action
+            android:id="@+id/Main_Activity_to_Load_Game_View"
+            app:destination="@id/loadfragment" />
+        <action
+            android:id="@+id/Main_Activity_to_selct_mode_view"
+            app:destination="@+id/game_mode_select_view"/>
+        <action
+            android:id="@+id/Main_Activity_to_Settings_View"
+            app:destination="@+id/settings"/>
+        <action
+            android:id="@+id/Main_Activity_to_Send_View"
+            app:destination="@+id/send_fragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/game_mode_select_view"
+        android:name="com.infotrends.in.tictactoe.ui.home.GameModeSelFragment"
+        android:label="Select Mode"
+        tools:layout="@layout/game_type_sel_fragment">
+        <action
+            android:id="@+id/Main_Activity_to_Tic_Tac_Toe_View"
+            app:destination="@id/nav_play_game" />
+        <action
+            android:id="@+id/Main_Activity_to_Tic_Tac_Toe_Vs_Comp_View"
+            app:destination="@id/nav_play_vs_comp_game" />
+        <action
+            android:id="@+id/Main_Activity_to_Load_Game_View"
+            app:destination="@id/loadfragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_play_game"
+        android:name="com.infotrends.in.tictactoe.ui.play.TicTacToeFragment"
+        android:label="Let's Play"
+        tools:layout="@layout/tictac_view" />
+    <fragment
+        android:id="@+id/loadfragment"
+        android:name="com.infotrends.in.tictactoe.ui.load.Loadfragment"
+        android:label="Load Saved Games"
+        tools:layout="@layout/fragment_load_saved" >
+        <action
+            android:id="@+id/Load_Fragment_to_Play_Fragment"
+            app:destination="@+id/nav_play_game"/>
+        <action
+            android:id="@+id/Load_Fragment_to_Play_Fragment_Vs_Comp"
+            app:destination="@+id/nav_play_vs_comp_game"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_play_vs_comp_game"
+        android:name="com.infotrends.in.tictactoe.ui.playVsComp.TicTacToeCompFragment"
+        android:label="Let's Play"
+        tools:layout="@layout/tictac_view"></fragment>
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.infotrends.in.tictactoe.ui.settings.SettingsFragment"
+        tools:layout="@layout/fragment_settings"
+        android:label="Settings"></fragment>
+    <fragment
+        android:id="@+id/send_fragment"
+        android:name="com.infotrends.in.tictactoe.ui.send.SendFragment"
+        tools:layout="@layout/fragment_send"
+        android:label="Review"></fragment>
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.infotrends.in.tictactoe.ui.send.ShareFragment"
+        android:label="Share via..."/>
+</navigation>
